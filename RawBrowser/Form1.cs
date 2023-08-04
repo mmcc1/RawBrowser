@@ -23,7 +23,7 @@ namespace RawBrowser
 
                     for (int i = 0; i < hrm.Headers.Count(); i++)
                     {
-                        textBox2.AppendText(hrm.Headers.ElementAt(i).Key);
+                        textBox2.AppendText(hrm.Headers.ElementAt(i).Key + " ");
 
                         for (int j = 0; j < hrm.Headers.ElementAt(i).Value.Count(); j++)
                             textBox2.AppendText(hrm.Headers.ElementAt(i).Value.ElementAt(j) + " ");
@@ -38,7 +38,7 @@ namespace RawBrowser
 
                     for (int i = 0; i < hrm.Content.Headers.Count(); i++)
                     {
-                        textBox2.AppendText(hrm.Content.Headers.ElementAt(i).Key);
+                        textBox2.AppendText(hrm.Content.Headers.ElementAt(i).Key + " ");
 
                         for (int j = 0; j < hrm.Content.Headers.ElementAt(i).Value.Count(); j++)
                             textBox2.AppendText(hrm.Content.Headers.ElementAt(i).Value.ElementAt(j) + " ");
